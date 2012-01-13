@@ -4,9 +4,6 @@
 [submodule "bundle/javascript"]
 	path = bundle/javascript
 	url = git://github.com/pangloss/vim-javascript.git
-[submodule "bundle/markdown"]
-	path = bundle/markdown
-	url = git://github.com/tpope/vim-markdown.git
 [submodule "bundle/rails"]
 	path = bundle/rails
 	url = git://github.com/tpope/vim-rails.git
@@ -25,6 +22,3 @@
 [submodule "bundle/commentary"]
 	path = bundle/commentary
 	url = git://github.com/tpope/vim-commentary.git
-[submodule "bundle/molokai"]
-	path = bundle/molokai
-	url = git://github.com/mrtazz/molokai.vim.git
