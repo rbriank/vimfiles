@@ -14,8 +14,9 @@ call pathogen#infect()
 filetype plugin indent on
 
 set background=dark
-color molokai
-set nonumber
+color vividchalk
+
+set number
 set ruler       " show the cursor position all the time
 set cursorline
 set showcmd     " display incomplete commands
@@ -23,6 +24,9 @@ set showcmd     " display incomplete commands
 " Allow backgrounding buffers without writing them, and remember marks/undo
 " for backgrounded buffers
 set hidden
+
+map ; :
+nnoremap <C-J> a<CR><Esc>k$ 
 
 "" Whitespace
 set nowrap                        " don't wrap lines
