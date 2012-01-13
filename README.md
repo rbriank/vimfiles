@@ -45,3 +45,7 @@ files inside the ".vim" directory.
 * rails
 * javascript
 * ruby
+
+## Colors:
+* vividchalk
+
