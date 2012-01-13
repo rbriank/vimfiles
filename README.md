@@ -1,8 +1,8 @@
-Mislav's vim configuration
+rbriank's vim configuration
 ==========================
 
 Thanks to these guys:
-
+* [Mislav](https://github.com/mislav),
 * [Gary Bernhardt](http://destroyallsoftware.com),
 * [Drew Neil](http://vimcasts.org),
 * [Tim Pope](http://tbaggery.com),
@@ -42,8 +42,6 @@ files inside the ".vim" directory.
 * commentary
 * endwise
 * fugitive
-* markdown
 * rails
-* haml
-* scss
-* coffee-script
+* javascript
+* ruby
