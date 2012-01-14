@@ -18,7 +18,7 @@ Prerequisites: ruby, git.
 1. Move your existing configuration somewhere else:  
    `mv ~/.vim* ~/.gvim* my_backup`
 2. Clone this repo into ".vim":  
-   `git clone https://github.com/mislav/vimfiles ~/.vim`
+   `git clone https://rbriank@github.com/rbriank/vimfiles.git ~/.vim`
 3. Go into ".vim" and run "rake":  
    `cd ~/.vim && rake`
 
@@ -47,5 +47,6 @@ files inside the ".vim" directory.
 * ruby
 
 ## Colors:
+
 * vividchalk
 
