@@ -25,7 +25,6 @@ set showcmd     " display incomplete commands
 " for backgrounded buffers
 set hidden
 
-map ; :
 nnoremap <C-J> a<CR><Esc>k$ 
 
 "" Whitespace
@@ -99,6 +98,7 @@ map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 
 " ignore Rubinius, Sass cache files
 set wildignore+=*.rbc,*.scssc,*.sassc
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 nnoremap <leader><leader> <c-^>
 
@@ -139,3 +139,33 @@ if has("statusline") && !&cp
 endif
 
 let g:CommandTMaxHeight=10
+
+set mouse=a
+nnoremap <leader>m :call ToggleMouse()<CR>
+function! ToggleMouse()
+  if &mouse == 'a'
+    set mouse=
+    echo 'mouse off'
+  else
+    set mouse=a
+    echo 'mouse on'
+  endif
+endfunction
+noremap <leader>n :set number!<CR>
+noremap <leader>mn :set mouse=<cr>:set invnumber<cr>
+noremap <leader>nm :set mouse=a<cr>:set number<cr>
+
+function Softwrap()
+  set formatoptions=1
+  set linebreak
+  set wrap
+  set nolist
+  set breakat=\ |@-+;:,./?^I
+  nnoremap j gj
+  nnoremap k gk
+  vnoremap j gj
+  vnoremap k gk
+  set foldcolumn=7
+endfunction
+nnoremap <leader>w :call Softwrap()<cr>u<cr>
+
