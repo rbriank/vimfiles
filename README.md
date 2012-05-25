@@ -47,6 +47,7 @@ files inside the ".vim" directory.
 * ruby
 * surround
 * repeat
+* syntastic
 
 ## Colors:
 
