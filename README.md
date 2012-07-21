@@ -25,6 +25,12 @@ Prerequisites: ruby, git.
 This will install "~/.vimrc" and "~/.gvimrc" symlinks that point to
 files inside the ".vim" directory.
 
+To add a new plugin:
+$ cd ~/.vim/
+$ git init
+
+git submodule add https://github.com/msanders/snipmate.vim.git bundle/snipmate
+
 ## Features:
 
 * 2 spaces, no tabs
