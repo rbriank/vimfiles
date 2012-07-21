@@ -31,3 +31,9 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "bundle/snipmate-snippets-rubymotion"]
+	path = bundle/snipmate-snippets-rubymotion
+	url = https://github.com/rcyrus/snipmate-snippets-rubymotion.git
