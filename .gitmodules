@@ -16,9 +16,6 @@
 [submodule "bundle/endwise"]
 	path = bundle/endwise
 	url = git://github.com/tpope/vim-endwise.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://github.com/wincent/Command-T.git
 [submodule "bundle/commentary"]
 	path = bundle/commentary
 	url = git://github.com/tpope/vim-commentary.git
@@ -37,3 +34,6 @@
 [submodule "bundle/snipmate-snippets-rubymotion"]
 	path = bundle/snipmate-snippets-rubymotion
 	url = https://github.com/rcyrus/snipmate-snippets-rubymotion.git
+[submodule "bundle/zenconding"]
+	path = bundle/zenconding
+	url = http://github.com/mattn/zencoding-vim.git
