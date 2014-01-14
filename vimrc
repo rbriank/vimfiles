@@ -14,7 +14,7 @@ call pathogen#infect()
 filetype plugin indent on
 
 set background=dark
-color vividchalk
+colorscheme solarized
 
 set number
 set ruler       " show the cursor position all the time
@@ -84,14 +84,12 @@ map Q gq
 
 let mapleader=","
 
-map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
-map <leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
-map <leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
-map <leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
-map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
-map <leader>gf :CommandTFlush<cr>\|:CommandT features<cr>
-map <leader>gg :topleft 100 :split Gemfile<cr>
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+map <leader>t :CtrlP<cr>
+map <leader>gv :CtrlP app/views<cr>
+map <leader>gc :CtrlP app/controllers<cr>
+map <leader>gm :CtrlP app/models<cr>
+map <leader>gl :CtrlP lib<cr>
+
 " http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
@@ -99,6 +97,7 @@ map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 " ignore Rubinius, Sass cache files
 set wildignore+=*.rbc,*.scssc,*.sassc
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 nnoremap <leader><leader> <c-^>
 
