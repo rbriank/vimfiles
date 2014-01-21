@@ -137,7 +137,8 @@ if has("statusline") && !&cp
   set statusline+=[%b][0x%B]
 endif
 
-let g:CommandTMaxHeight=10
+" Set default SQL syntax to Postgres.
+let g:sql_type_default = 'sqlpostgres'
 
 set mouse=a
 nnoremap <leader>m :call ToggleMouse()<CR>
